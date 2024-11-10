@@ -27,14 +27,6 @@
 </head>
 
 <body>
-  <?php session_start(); ?>
-  <?php
-  if (isset($_SESSION['user_data'])) {
-    header("Location: /home");
-    exit();
-  }
-  ?>
-
   <div class="login-container">
     <h2 class="text-center">Login</h2>
     <form action="/login" method="post">

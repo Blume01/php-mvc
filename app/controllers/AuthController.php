@@ -16,6 +16,11 @@ class AuthController extends Router
 
   public function index()
   {
+    session_start();
+    if (isset($_SESSION['user_data'])) {
+      header("Location: /home");
+      exit();
+    }
     $this->render('login');
   }
 

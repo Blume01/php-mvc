@@ -34,7 +34,7 @@ class Router
     if (file_exists($viewFile)) {
       include $viewFile;
     } else {
-      echo "View '{$view}' não encontrada.";
+      $this->render('404');
     }
   }
 }

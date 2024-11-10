@@ -23,7 +23,6 @@ class UserController extends Dump
       return; 
     }
 
-    echo "<pre>";
     $this->dd($user_data);
   }
 }

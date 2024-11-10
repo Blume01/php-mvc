@@ -7,7 +7,6 @@ class Router
   private $routes = [];
 
   public function add($pattern, $callback) {
-    // Ajusta o regex para capturar IDs no formato alfanumérico com hífens
     $pattern = preg_replace('/\{([a-zA-Z0-9_]+)\}/', '(?P<\1>[a-zA-Z0-9\-]+)', $pattern);
     $pattern = '/^' . str_replace('/', '\/', $pattern) . '$/';
 

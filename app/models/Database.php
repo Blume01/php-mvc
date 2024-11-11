@@ -11,7 +11,7 @@ class Database
   private string $hostname = "localhost";
   private string $username = "root";
   private string $password = "";
-  private string $database = "test";
+  private string $database = "php-mvc";
 
   protected PDO $connection;
 

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Cadastrar-se</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -15,7 +15,7 @@
       background-color: #f8f9fa;
     }
 
-    .login-container {
+    .register-container {
       width: 100%;
       max-width: 400px;
       padding: 20px;
@@ -27,21 +27,22 @@
 </head>
 
 <body>
-  <div class="login-container">
-    <h2 class="text-center">Login</h2>
-    <form action="/login" method="post">
+  <div class="register-container">
+    <h2 class="text-center">Cadastrar-se</h2>
+    <form action="/create" method="post">
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="text" class="form-control" name="name" placeholder="Digite um nome">
+      </div>
       <div class="form-group">
         <label for="username">Usuário</label>
-        <input type="text" class="form-control" name="username" placeholder="Digite seu usuário">
+        <input type="text" class="form-control" name="username" placeholder="Digite um usuário">
       </div>
       <div class="form-group">
         <label for="password">Senha</label>
-        <input type="password" class="form-control" name="password" placeholder="Digite sua senha">
+        <input type="password" class="form-control" name="password" placeholder="Digite uma senha">
       </div>
-      <button type="submit" class="btn btn-primary btn-block">Entrar</button>
-      <div class="text-center mt-3">
-        <a href="/register">Novo por aqui? Cadastre-se</a>
-      </div>
+      <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
     </form>
   </div>
 

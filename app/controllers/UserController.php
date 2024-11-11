@@ -16,6 +16,12 @@ class UserController extends Dump
 
   public function show($id)
   {
+    session_start();
+    if (!isset($_SESSION['user_data'])) {
+      header("Location: /");
+      exit();
+    }
+    
     $user_data = $this->user->getUserById($id);
 
     if (!$user_data) {

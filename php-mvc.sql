@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 11/11/2024 às 17:29
+-- Tempo de geração: 11/11/2024 às 17:55
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -36,14 +36,6 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Despejando dados para a tabela `users`
---
-
-INSERT INTO `users` (`id`, `user_id`, `name`, `username`, `password`) VALUES
-(1, '0WoVywj2-WH49-Nqof-h4sz-tuL1sHEh95SU', 'Teste 1', 'admin', 'admin'),
-(2, '0WoVybt5-WH49-Nme7-h4sz-tuL1sHdmksua', 'user test', 'user', 'user');
-
---
 -- Índices para tabelas despejadas
 --
 
@@ -61,7 +53,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de tabela `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
